@@ -10,6 +10,7 @@ env:
 jobs:
   test:
     #based on environment, these env vars changes for different jobs
+    environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.rmrge9l.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
