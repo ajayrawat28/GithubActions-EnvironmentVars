@@ -12,8 +12,8 @@ jobs:
     #based on environment, these env vars changes for different jobs
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.b9s0mei.mongodb.net
-      MONGODB_USERNAME: ajayrawat281292_db_user
-      MONGODB_PASSWORD: V2jsdkY24uLTgpdZ
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
